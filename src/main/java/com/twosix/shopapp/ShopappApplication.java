@@ -8,14 +8,9 @@ import org.springframework.context.ApplicationContext;
 public class ShopappApplication {
 
 	public static void main(String[] args) {
+         SpringApplication.run(ShopappApplication.class, args);
 
-       ApplicationContext context= SpringApplication.run(ShopappApplication.class, args);
-
-        //get the type of the container i.e. ApplicationContext
-
-        Emperor emperor = context.getBean(Emperor.class);
-
-        emperor.build();
 	}
 
 }
+2
