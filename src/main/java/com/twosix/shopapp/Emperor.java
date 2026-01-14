@@ -9,7 +9,7 @@ public class Emperor {
     //@Autowired //field injection here
     private King king;
 
-    //@Primary , @Qualifierf
+    //@Primary , @Qualifier
 
     //constructor injection
     public Emperor(King king){
