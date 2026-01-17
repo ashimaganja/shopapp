@@ -1,4 +1,4 @@
-package com.twosix.shopapp;
+package com.twosix.shopapp.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,6 +7,7 @@ import lombok.Data;
 @AllArgsConstructor
 public class Car {
 
+        private int Id;
         private String name;
         private String color;
         private String engineType;

@@ -1,12 +1,11 @@
-package com.twosix.shopapp;
+package com.twosix.shopapp.controller;
 
 
 
+import com.twosix.shopapp.model.Car;
+import com.twosix.shopapp.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,6 +24,11 @@ public class EverythingController {
     @RequestMapping("/products")
     public List<Car> getCars(){
         return carService.getProduct();
+    }
+
+    @RequestMapping("/products/{prodId}")
+    public Car getProductById(@PathVariable int prodId){
+        return carService.getProductById(prodId);
     }
 
 
